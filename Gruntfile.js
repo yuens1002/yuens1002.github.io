@@ -385,7 +385,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'portfolioApp',
+          module: 'yuens1002githubioApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -509,7 +509,13 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
+//     'concurrent:dist',
+    
+    'sass',
+    'copy:styles',
+    'imagemin',
+    'svgmin',
+    
     'postcss',
     'ngtemplates',
     'concat',

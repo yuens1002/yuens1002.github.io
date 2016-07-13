@@ -31,6 +31,21 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/kitchen-sink', {
+        templateUrl: 'views/kitchen-sink.html',
+        controller: 'KitchenSinkCtrl',
+        controllerAs: 'kitchenSink'
+      })
+      .when('/work', {
+        templateUrl: 'views/work.html',
+        controller: 'WorkCtrl',
+        controllerAs: 'work'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
       .otherwise({
         redirectTo: '/'
       });

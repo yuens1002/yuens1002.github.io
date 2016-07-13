@@ -41,7 +41,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'https://github.com/yuens1002/yuens1002.github.io.git',
+          remote: 'git@github.com:yuens1002/yuens1002.github.io.git',
           branch: 'master'
         }
       }
